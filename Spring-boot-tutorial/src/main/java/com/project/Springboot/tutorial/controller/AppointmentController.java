@@ -24,7 +24,6 @@ public class AppointmentController {
         Appointment createdAppointment = appointmentService.createAppointment(appointment);
         return ResponseEntity.ok(createdAppointment);
     }
-
     @PutMapping
     public ResponseEntity<Appointment> updateAppointment(@RequestBody Appointment appointment) {
         Appointment updatedAppointment = appointmentService.updateAppointment(appointment);
